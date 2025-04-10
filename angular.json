@@ -107,6 +107,12 @@
             "compodocArgs": ["-e", "json", "-d", "."],
             "outputDir": "storybook-static"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "buildTarget": "jw13-craft-microfront:build:production"
+          }
         }
       }
     }
